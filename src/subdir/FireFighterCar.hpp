@@ -3,7 +3,7 @@ class FireFighterCar:public PriorityCar{
     private:
         
     public:
-        std::string display(int power,int code);
-        FireFighterCar();
-        FireFighterCar(Car v,int code);
+        std::string display();
+        FireFighterCar(int power,int code);
+        FireFighterCar(const Car &v,int code);
 };

@@ -3,10 +3,11 @@ class PriorityCar:public Car{
     private:
         
     protected:
-        bool beacon;
-        int code;
+        bool _beacon;
+        int _code;
 
     public:
         void startWithCode (int code);
         PriorityCar();
+        PriorityCar(const Car &v);
 };

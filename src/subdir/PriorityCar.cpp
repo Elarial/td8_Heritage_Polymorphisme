@@ -1,7 +1,6 @@
 #include "PriorityCar.hpp"
 void PriorityCar::startWithCode (int code){
-    this->code = code;
+    _code = code;
 }
-PriorityCar::PriorityCar():Car(){
-    
-}
+PriorityCar::PriorityCar(const Car &v):Car(v){}
+PriorityCar::PriorityCar():Car(){}
