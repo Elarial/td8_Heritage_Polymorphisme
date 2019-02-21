@@ -1,3 +1,5 @@
+#ifndef POLICECAR_HPP
+#define POLICECAR_HPP
 #include "PriorityCar.hpp"
 class PoliceCar:public PriorityCar{
     private:
@@ -7,3 +9,4 @@ class PoliceCar:public PriorityCar{
         PoliceCar(const Car &v,int code);
         bool checkColor();
 };
+#endif/*<POLICECAR_HPP>*/

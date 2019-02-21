@@ -4,10 +4,12 @@ std::string FireFighterCar::display(){
     return "Fire Fighter Car\n"+Car::display();
 }
 
-FireFighterCar::FireFighterCar(int power,int code):PriorityCar(){
-    checkColor();
+FireFighterCar::FireFighterCar(const int power,const std::string color,const int speed,const int code){
     _power = power;
+    _color = color;
+    _speed = speed;
     _code = code;
+    checkColor();
 }
 FireFighterCar::FireFighterCar(const Car &v, int code):PriorityCar(v) {
     

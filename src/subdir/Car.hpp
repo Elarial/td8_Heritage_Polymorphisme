@@ -1,3 +1,5 @@
+#ifndef CAR_HPP
+#define CAR_HPP
 #include <string>
 #include <exception>
 #include <iostream>
@@ -36,3 +38,4 @@ class InvalidColorException : public std::exception
         return "Color is invalid for this Car";
     }
 };
+#endif /*CAR_HPP*/

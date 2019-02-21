@@ -1,3 +1,5 @@
+#ifndef ELECTRICCAR_HPP
+#define ELECTRICCAR_HPP
 #include "Car.hpp"
 class ElectricCar: public Car{
     private:
@@ -10,3 +12,4 @@ class ElectricCar: public Car{
         bool checkColor();
         bool getBreaker();
 };
+#endif /*ELECTRICCAR_HPP*/

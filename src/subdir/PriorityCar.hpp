@@ -1,3 +1,5 @@
+#ifndef PRIORITYCAR_HPP
+#define PRIORITYCAR_HPP
 #include "Car.hpp"
 
 class PriorityCar : public Car
@@ -33,7 +35,7 @@ class InvalidStartUseException : public std::exception
         return "Start method can't be used for priority's cars, use startWhithCode instead";
     }
 };
-
+#endif /*PRIORITYCAR_HPP*/
 
 
 
