@@ -6,4 +6,5 @@ class FireFighterCar:public PriorityCar{
         std::string display();
         FireFighterCar(int power,int code);
         FireFighterCar(const Car &v,int code);
+        bool checkColor();
 };

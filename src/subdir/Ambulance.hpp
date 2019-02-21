@@ -4,6 +4,7 @@ class Ambulance:public PriorityCar{
     public:
         std::string display();
         Ambulance(int power,int code);
-        Ambulance(Car v,int code);
-
-}
+        Ambulance(const Car &v,int code);
+        bool checkColor();
+        
+};

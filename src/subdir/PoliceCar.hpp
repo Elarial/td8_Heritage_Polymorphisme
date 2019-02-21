@@ -4,5 +4,6 @@ class PoliceCar:public PriorityCar{
     public:
         std::string display();
         PoliceCar(int power,int code);
-        PoliceCar(Car v,int code);
+        PoliceCar(const Car &v,int code);
+        bool checkColor();
 };
